@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina|Lobster');
+
+body {
+    background-color: #89877e;
+    margin: 0px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.content{
+    text-align: center;
+}
+
+.content img{
+    width: 60%;
+    height: auto;
+}
+/*-------------------------------------
+||
+|| fucking aroung
+||
+-------------------------------------*/
+.hoops{
+    display: flex;
+}
+.art{
+	flex: 3;
+
+}
+.side{
+	flex: 1;
+    background-color: #393939;
+    text-align: center;
+    color: #f6efe0;
+    padding: 10px;
+
+}
+.side img{
+    width: 95%;
+    padding: 10px;
+}
+
+.about{
+    width: 500px;
+    padding: 20px;
+    margin: 10px 150px;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+
+nav.main {
+    /*overflow: hidden;*/
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    position: relative;
+    background-color: #89877e;
+}
+
+nav.main .fa-bars {
+    color: #60616D;
+    font-size: 50px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.full{}
+.full img{
+    width: 100%;
+}
+
+
+nav.main .links {
+    display: none;
+    text-align: right;
+}
+
+nav.main ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav.main li {
+    display: inline;
+    list-style: none;
+}
+
+nav.main a {
+    display: block;
+    color: #60616D;
+    padding: 15px 0px;
+    font-size: 1.682em;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    line-height: 10px;
+    margin: 0px;
+    letter-spacing: .1em;
+}
+
+nav.main a:hover {
+    background-color: #DDD8DE;
+    color: #5d999c;
+}
+
+body.hamburger-expanded nav.main .links {
+    display: block;
+}
+
+form {
+    display: none;
+}
+
+.under{
+    width: 50%;
+    padding: 10px;
+    margin: auto;
+}
+
+/*-------------------------------------
+||
+|| media min 480... everything over iphone
+||
+-------------------------------------*/
+
+@media screen and (min-width:480px) {
+    nav.main .fa-bars {
+        display: none;
+    }
+    nav.main .links {
+        display: block;
+    }
+    nav.main a {
+        display: inline;
+        font-size: 1.325em;
+        padding: 20px 15px;
+    }
+    * {
+        box-sizing: border-box;
+    }
+    .topsec .inset {
+        display: flex;
+        justify-content: space-around;
+    }
+    body.nav-pinned nav.main {
+        position: fixed;
+        left: 0px;
+        top: -10px;
+        right: 0px;
+        z-index: 1000;
+    }
+    body.nav-pinned header.masthead {
+        margin-bottom: 80px;
+    }
+    /*-------------------------------------
+    | form
+    -------------------------------------*/
+    form {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        color: #60616D;
+        display: flex;
+        flex-flow: row wrap;
+        /* This aligns items to the end line on main-axis */
+        justify-content: flex-end;
+    }
+    .parentField {
+        margin: 10px 1px;
+    }
+    .fieldSmall {
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    .fieldButton {
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: #ff7532;
+        color: #ffffff;
+    }
+    /*#label {
+        text-align: center;
+        color: #D1CCD1;
+        font-family: sans-serif;
+    }*/
+    #input {
+        /*margin: 0 46%;*/
+        padding: auto;
+    }
+
+
+
+/* line -------------------------------*/
+
+
+
+h1 {
+    font-size: 4.2em;
+    color: #60616D;
+    padding-top: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-family: 'Baloo Bhaina', cursive;
+    display: flex;
+    flex-flow: row wrap;
+    /* This aligns items to the end line on main-axis */
+    justify-content: flex-start;
+}
+
+h2{
+    color: #d4d4d4;
+    font-size: 1.9em;
+    font-family: 'Lobster', cursive;
+
+}
+a{
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+.inset {
+    width: 100%;
+    min-width: 320px;
+    max-width: 1200px;
+    margin: auto;
+}
+.label{
+    color: black;
+}
+
+
+footer {
+    width: 100%;
+    background-color: #000000;
+    text-align: center;
+    color: #d8d8d8;
+    padding: 8px;
+}
+
+
+
+footer p {
+    color: #b6b6b6;
+    font-family: sans-serif;
+    font-size: .9em;
+}
+
+footer h2 {
+    font-size: 1.2em;
+}
+ /* Contact -------------------------------*/
+ .wpcf7 {
+
+background-color: #F0F0F0;
+
+border: 5px solid #666666;
+
+}
+.wpcf7-form {
+
+margin-left: 25px;
+
+margin-right: 25px;
+
+margin-top: 25px;
+display: block;
+}
+.wpcf7-submit {
+
+background: #555555;
+
+color: #ffffff;
+
+}
+
+
+/*-------------------------------------
+||
+|| sli
+deshow styles
+||
+-------------------------------------*/
+
+body.page-home main {
+    padding: 0px;
+}
+
+body.page-home main>.inset {
+    width: 100%;
+    max-width: none;
+}
+
+.slideshow {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slideshow .slide {
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 100px;
+    margin-top: 25px;
+}
+
+.slideshow .slide img {
+    display: none;
+}
+
+
+
+@media screen and (min-width:700px;
+) {
+    .slideshow {
+        height: 600px;
+    }
+    .slideshow .slide {
+        height: 600px;
+    }
+    .slideshow .slide .text {
+        padding: 20px;
+        font-size: 40px;
+    }
+}
+
+
+}
+
+}
